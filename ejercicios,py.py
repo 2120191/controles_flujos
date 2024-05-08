@@ -15,6 +15,12 @@ print("contraseña_contraseña")
 
 ##ejercicio tres
 ``` python
-
-
+numero=int(input("ingrese numero entero positivo"))
+numero = int(input("Por favor, ingrese un número entero positivo: "))
+if numero < 0:
+    print("El número ingresado no es positivo. Por favor, ingrese un número entero positivo.")
+else:
+ cuenta_regresiva = list(range(numero, -1, -1))
+    cuenta_regresiva_str = ', '.join(map(str, cuenta_regresiva))
+    print(f"Cuenta regresiva desde {numero} hasta 0: {cuenta_regresiva_str}")
 
